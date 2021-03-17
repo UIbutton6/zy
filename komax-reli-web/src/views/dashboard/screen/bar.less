@@ -1,0 +1,160 @@
+@cover: ~'>>>';
+
+.bar {
+  position: fixed;
+  top: 82px;
+  width: 320px;
+  z-index: 49;
+  height: calc(100vh - 82px);
+
+  // background-color:rgba(31, 39, 53, 0.8);
+  background-color: rgba(81, 82, 88, .65);
+  @{cover} .ant-timeline-item-content {
+    color: #fff;
+    font-size: 12px;
+  }
+  @{cover} .ant-page-header-ghost {
+    background-color: transparent;
+    padding: 16px 18px;
+
+    .ant-page-header-heading {
+      color: #fff;
+
+      .ant-page-header-back {
+        margin-top: 5px;
+        margin-right: 4px;
+      }
+
+      .ant-page-header-heading-title {
+        font-size: 16px;
+        padding-right: 6px;
+        color: #fff;
+      }
+      
+      .ant-page-header-heading-sub-title {
+        color: #fff;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  @{cover} .ant-page-header-content {
+    .ant-descriptions-item-label {
+      color: #fff;
+    }
+    .ant-descriptions-item-content{
+      color: #bbb;
+    }
+  }
+
+  @{cover} .ant-statistic {
+    .ant-statistic-title {
+      color: #fff;
+    }
+  }
+
+  .statisticNum {
+    font-size: 18px;
+  }
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+  // left: calc(100vw - 320px);
+}
+
+
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 50;
+  height: 82px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  background-color:rgba(31, 39, 53, 0.8);
+  // background-color: rgba(81, 82, 88, .5);
+  .navbar-header {
+    float: left;
+    height: 100%;
+
+    .navbar-brand {
+      float: left;
+      width: 446px; 
+      font-size: 18px; 
+      line-height: 20px;
+      padding-left: 8px;
+      padding-right: 15px;
+
+      .navbar-logo{ width: 50px; height: 50px; display: inline-block; }
+    }
+  }
+
+  .navbar-title {
+    margin-left: 15px;
+    text-align: center; 
+    display: inline-table; 
+    vertical-align: middle; 
+    
+    .navbar-brand-text {
+      color: #fff;
+      display: block;
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: 5.5px;
+    }
+    .navbar-brand-subtext {
+      color: #999;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .navbar-title.clock {
+    margin-left: 0; 
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+    .navbar-brand-subtext {
+      letter-spacing: 1.5px; color: #fff;
+    }
+  }
+}
+
+.setting {
+  height: 100%;
+  float: right;
+  width: 70px;
+  text-align: center;
+  padding-top: 25px;
+
+  .icon {
+    color: #ddd;
+    font-size: 30px;
+  }
+
+  &:hover {
+    // background-color: rgba(10, 11, 16, .5);
+    // background-color: rgba(81, 82, 88, .5);
+    background: #fff;
+    .icon {
+      color: #000;
+    }
+  }
+
+  .menubar {
+    text-align: right; margin-top: -2px
+  }
+
+  @{cover} .ant-dropdown-menu {
+    border-radius: 0;
+  }
+}
+
+// .settingMenu {
+
+// }
